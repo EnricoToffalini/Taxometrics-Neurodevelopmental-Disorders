@@ -1,0 +1,123 @@
+---
+title: "Review protocol: A Critical Evaluation of Taxometric Analysis in the Study of Neurodevelopmental Disorders"
+author: "Enrico Toffalini and Valentina Tobia"
+date: 2025-03-31
+format: 
+    pdf
+bibliography: Bibliography.bib
+csl: assets/apa.csl
+---
+
+# 1. Objectives and rationale
+
+In recent years, a transdiagnostic dimensional framework has gained increasing importance in the study of neurodevelopmental disorders, including learning disorders (e.g., dyslexia), attention-deficit/hyperactivity disorder (ADHD), and autism spectrum disorder (ASD) [@astle2022annual; @michelini2024neurodevelopmental]. This framework is consistent with the notions that neurodevelopmental disorders have a strong neurobiological and genetic basis (i.e., high heritability), and that the genes involved tend to be generalists, affecting multiple traits simultaneously [@plomin2005generalist]. More broadly, it reflects the understanding that complex behavioral traits are typically highly polygenic [@chabris2015fourth].
+
+Debate over whether neurodevelopmental disorders should be understood as categorical entities has involved the use of data-driven methods such as clustering algorithms [e.g., @astle2022annual]. However, taxometric analysis appears to more directly address the issue. Unfortunately, it has been so far underused in this field of research. Taxometric analysis consists of a set of methods developed to determine whether the latent structure underlying psychological constructs, such as mental disorders, is categorical (i.e., "taxonic") or dimensional [@meehl1999clarifications; @meehl1996taxometric]. Although these methods have been extensively used in clinical psychology, and comprehensive reviews are now available [e.g., @haslam2020dimensions], their application in the context of neurodevelopmental disorders has been relatively limited and, possibly methodologically questionable. A recent debate involving @happe2020annual, @chown2021can, and @happe2021dimensional on the nature of autism discussed various lines of evidence regarding autism latent structure, but did not explicitly mention the potential of taxometric analysis. Other articles employing taxometric methods, as reviewed by @haslam2020dimensions, along with a recent empirical study by @frazier2023categorical, suggest that autism may be categorical. In contrast, ADHD appears to show a dimensional latent structure in taxometric investigations [@haslam2006latent; @marcus2011does]. Less is currently known about the latent structure of learning disorders. One article on dyslexia by @o2012taxometric suggested that already diagnosed children (by the way, using a collection of alternative criteria based on different reading indices) might be clustered into different subtypes, but it focused only on identifying subtypes and did not use taxometric analysis to examine whether dyslexia represents a taxon in relation to the general population.
+
+One concern is that taxometric analysis is not only underused in the literature on neurodevelopmental disorders, but also that it is sometimes misapplied, leading to methodological issues. The most notable caveat, particularly evident in the above cited studies on autism, is the widespread use of artificial admixture. Artificial admixture refers to the practice of combining subgroups of participants selected using different criteria (e.g., a control group and a clinically diagnosed group) when conducting taxometric analysis. This practice is problematic because it can artificially produce a taxonic latent structure, even when the true underlying structure is dimensional [@grove1991validity; @ruscio2004conceptual].
+
+The present review aims to critically evaluate the use of taxometric methods in published studies on neurodevelopmental disorders, with a particular focus on methodological issues, especially potential sources of bias such as artificial admixture and non-representative samples. The motivation is twofold. First, to assess whether the conclusions about latent structure drawn in these studies are supported by sound methodological practices. Second, to inform future research about the limitations and risks of applying taxometric analysis in this context. This is particularly urgent given the current state of knowledge on neurodevelopmental disorders and the increasing prominence of transdiagnostic dimensional approaches. Multiple lines of evidence (from behavioral genetics, psychometrics, and population-level studies) suggest that these conditions are best characterized as continuous and normally distributed. However, misapplications of taxometric methods may result in spurious claims of categorical boundaries, leading to confusion with significant implications for theory, clinical practice, and identity formation in children.
+
+------------------------------------------------------------------------
+
+# 2. Methods
+
+## 2.1 Sample
+
+### 2.1.1 Sources and Search strategy
+
+A systematic search will be conducted in databases including PsycINFO, PubMed, Scopus, and Web of Science. The search will be performed on titles, abstracts, and keywords (excluding full texts), and may include the wildcard "*" to broaden the scope where supported (e.g., in Scopus):
+
+(("taxometric" OR "taxometrics" OR "taxometric analysis" OR "MAMBAC" OR "MAXCOV" OR "MAXEIG" OR "L-Mode") AND ("autism" OR "ASD" OR "attention-deficit" OR "ADHD" OR "learning disorder" OR "learning disability" OR "dyslexia" OR "reading disability" OR "reading disorder" OR "dyscalculia" OR "mathematics disorder" OR "matehmatical learning difficulties"))
+
+The precise query used for each search engine will be documented. Additional records will be identified through screening the reference lists of relevant systematic reviews [e.g., @haslam2020dimensions], citation tracking of key methodological articles, and supplementary searches via Google Scholar or AI-based tools such as OpenAI or Grok. The search will not be restricted by publication date but will be limited to published, peer-reviewed journal articles, as the primary aim of this review is to provide an overview of methodological limitations in the existing literature. 
+
+### 2.1.2 Eligibility Criteria
+
+Inclusion criteria:
+
+- The study applies at least one taxometric procedure (e.g., MAMBAC, MAXCOV, L-Mode, MAXEIG);
+
+- The target population is individuals with neurodevelopmental disorders or traits;
+
+- The study draws a conclusion about the latent structure (categorical vs. dimensional) or reports sufficient information for an independent reader to reach a conclusion based on those results (e.g., reports CCFIs).
+
+Exclusion criteria:
+
+- Theoretical, methodological, or simulation articles without empirical data;
+
+- Articles not reporting any behavioral data (e.g., only neuroimaging or neurophysiological data);
+
+- Reviews and/or meta-analyses;
+
+- Studies using other latent structure methods only (e.g., LPA, mixture modeling) without any taxometric methods being employed.
+
+## 2.2 Coding procedure
+
+Two human coders will independently code each article and report the variables listed in Table 1. Any discrepancies will be resolved through discussion, either with the PI or, if the PI is one of the coders, with a third person. Since a single article may report multiple samples, the coded dataframe will follow a long-form data structure, with articles that may appear across multiple rows.
+
+| **Variable Name** | **Description** | **Value Type** |
+|:--------------------------|:-------------------------|:-----------|
+| *ID_article* | A unique identifier of the article reporting the taxometric analysis. | Integer |
+|  |  |  |
+| *ID_sample* | A unique identifier of the sample within the article on which the taxometric analysis is performed. | Integer |
+|  |  |  |
+| *Authors* | Full list of the article authors' names. | Text |
+|  |  |  |
+| *Title* | Article title. | Text |
+|  |  |  |
+| *Year* | Year of publication of the article. | Integer |
+|  |  |  |
+| *Journal* | Name of the journal that published the article. | Text |
+|  |  |  |
+| *Target_disorder* | The neurodevelopmental condition addressed (e.g., Autistic Spectrum Disorder, ADHD, Dyslexia, Dyscalculia). | Category |
+|  |  |  |
+| *Population_type* | Type of population from which the sample was drawn (e.g., clinical, non-clinical, general unselected population, mixed/combined). | Category |
+|  |  |  |
+| *Sample_size* | Number of participants involved in the taxometric analysis | Integer |
+|  |  |  |
+| *Artificial_admixture* | Whether the analysis combined distinct subsamples separately drawn using alternative criteria (e.g., clinical + control; low score in a variable OR in another), possibly generating pseudotaxonic results. | Boolean |
+|  |  |  |
+| *Taxometric_methods_used* | Taxometric methods applied (e.g., MAMBAC, MAXCOV, L-Mode, MAXEIG). | List of categories |
+|  |  |  |
+| *Indicators_number* | Number of variables used as indicators in the taxometric analyses, if reported clearly. | Integer |
+|  |  |  |
+| *Indicators_skewness* | If reported, the skewness of the indicators. | List of numeric |
+|  |  |  |
+| *CCFI* | The value of the Comparison Curve Fit Index (CCFI), if reported. | Numeric |
+|  |  |  |
+| *Nuisance_covariance* | The within-group correlations, if reported separately by group. | List of numeric |
+|  |  |  |
+| *Indicators_validity* | The standardized mean difference (Cohen's d) between groups (taxon and complement). | Numeric |
+|  |  |  |
+| *Taxonic_conclusion* | Whether the authors explicitly concluded in favor of a taxonic structure. | Boolean |
+|  |  |  |
+| *Strength_of_conclusion* | If reported by the authors, the strength of the conclusion (e.g., strong, moderate, ambiguous). | Text |
+|  |  |  |
+| *Limits_reported* | Whether and what limitations are explicitly reported by the authors with regard to taxometric assumptions, sampling, or anything. | Text |
+
+#### Use of AI tools
+
+Generative AI tools (including GPT models from OpenAI) may be used to assist in locating relevant content within the reviewed articles. However, all coding decisions will be made by human researchers based on their own judgment. Fully automated coding process using available APIs might be conducted to explore the capability of AI in this context, but this will not be included in the review. If this is conducted, performance of AI will be reported and assessed against that of human coders. This automated coding will involve providing AI models different prompts to extract the same variables without human supervision. If conducted, this may serve to document on how accurately AI models can identify and extract methodological features in academic papers.
+
+## 2.3 Data analysis
+
+Data analysis will be primarily descriptive. Frequencies and proportions will be calculated for each coded variable. Patterns will be explored, with particular attention to the types of disorders studied; whether artificial admixture (i.e., combining clinical and control samples, or subsamples recruited using alternative criteria) was present; and the overall conclusions about latent structure. Specifically, we will examine whether methodological violations, particularly artificial admixture, high nuisance covariance, and low indicator validity, are systematically associated with conclusions in favor of taxonicity. Based on prior literature, studies that likely yield spurious evidence of taxonic structure will be flagged. A brief meta-summary will also be conducted, categorizing the strength of evidence for dimensional versus taxonic conclusions across studies for different types of neurodevelopmental disorders, using indices of methodological robustness, and especially the presence of artificial admixture, as moderators.
+
+------------------------------------------------------------------------
+
+# 3. Limitations
+
+This review may not comprehensively address all possible methodological issues associated with taxometric methods. Many such issues exist and are more thoroughly discussed in the literature cited in the introductory section. These issues may be variously serious across different subfields of psychology. In the case of neurodevelopmental disorders, which are the focus of this review, sampling-related problems, particularly artificial admixture, appear especially critical. Another major concern is nuisance covariance, which indicates to excessive correlation among indicators within groups. In the literature on neurodevelopmental disorders, this might result from the uncontrolled use of multiple indicators that just reflect the same underlying construct (e.g., multiple measures of the same underlying reading ability). For this reason, nuisance covariance is also given specific attention here. Nonetheless, additional methodological issues may emerge and be investigated in future work, even if they are not included in the present preregistration.
+
+This review does not address alternative methods for investigating categorical structure in neurodevelopmental disorders. Such methods include clustering approaches, such as latent profile analysis (LPA), latent class analysis (LCA), Gaussian mixture models, and other non-model-based clustering techniques, which are often used alongside taxometric methods in the relevant literature. An in-depth examination of these alternatives would require a much broader effort that may be undertaken in a future, more comprehensive review of the wider literature on clustering methods. Importantly, clustering approaches have their own assumptions, which, when violated, can frequently lead to false or misleading results in psychological research [@toffalini2022entia; @toffalini2024clusters]. For example, some methods assume local independence despite correlations across indicators (e.g., LPA, LCA, k-means algorithm when adapted for inferential purposes), while others assume normality of distributions (e.g., Gaussian mixture models, LPA). These issues, however, fall outside the scope of the current preregistered review. 
+
+------------------------------------------------------------------------
+
+### Funding
+
+This work is conducted as part of the project titled *"Tails or types? Testing the dimensional hypothesis in neurodevelopmental disorders"*, funded by the European Union - Next Generation EU, Mission 4, Component 1, CUP: C53D23004210006
+
+------------------------------------------------------------------------
+
+# References
