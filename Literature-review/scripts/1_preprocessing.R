@@ -23,7 +23,7 @@ table(df_nodup$Key) #check
 write_csv(df_nodup, file = "Literature-review/data/processed/df_nodup.csv")
 
 
-
+nrow(df_raw)-nrow(df_nodup)
 
 
 
