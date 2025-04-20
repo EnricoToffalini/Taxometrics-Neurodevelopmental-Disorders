@@ -20,10 +20,17 @@ table(df_raw$Key)
 ### 3.1. Remove duplicates
 df_nodup = unique(df_raw)
 table(df_nodup$Key) #check
+
 write_csv(df_nodup, file = "Literature-review/data/processed/df_nodup.csv")
 
-
+# 3.2. Number of duplicates removed
 nrow(df_raw)-nrow(df_nodup)
+
+## 4. Check itemType, and select just journalArticle
+table(df_nodup$`Item Type`)
+
+df_journalArticle = df_nodup[df_nodup$`Item Type` == "journalArticle", ]
+write_csv(df_journalArticle, file = "Literature-review/data/processed/df_ok.csv")
 
 
 
