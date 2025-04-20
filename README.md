@@ -14,3 +14,5 @@ Number of records for each electronic database
 Number of records identified through searching electronic databases (n=110) [Literature-review/data/preprocessed/df_all.csv]
 
 Number of records after duplicates removed (n=46) [Literature-review/data/preprocessed/df_nodup.csv]
+
+Number of records remaining after excluding non-journal articles (n=41) [Literature-review/data/preprocessed/df_ok.csv]
