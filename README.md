@@ -6,11 +6,11 @@ OR “reading dis*” OR “dyslexia” OR “math* dis*" OR "math* diff*"))
 
 
 Number of records for each electronic database
--  PsycINFO (n=24) [data/raw/PsycInfo.csv]
--  PubMed (n=22) [data/raw/PubMed.csv]
--  Scopus: (n=31) [data/raw/Scopus.csv]
--  Web of Science (n=33) [data/raw/WoS.csv]
+-  PsycINFO (n=24) [Literature-review/data/raw/PsycInfo.csv]
+-  PubMed (n=22) [Literature-review/data/raw/PubMed.csv]
+-  Scopus: (n=31) [Literature-review/data/raw/Scopus.csv]
+-  Web of Science (n=33) [Literature-review/data/raw/WoS.csv]
 
-Number of records identified through searching electronic databases (n=110) [data/preprocessed/df_all.csv]
+Number of records identified through searching electronic databases (n=110) [Literature-review/data/preprocessed/df_all.csv]
 
-Number of records after duplicates removed (n=46) [data/preprocessed/df_nodup.csv]
+Number of records after duplicates removed (n=46) [Literature-review/data/preprocessed/df_nodup.csv]
