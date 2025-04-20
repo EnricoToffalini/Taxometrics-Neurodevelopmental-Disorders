@@ -1,0 +1,15 @@
+A Critical Evaluation of Taxometric Analysis in the Study of Neurodevelopmental Disorders
+
+Used query: ((“taxometric*” OR “MAMBAC” OR “MAXCOV” OR “MAXEIG” OR “L-Mode”) AND 
+(“autis*” OR “ASD” OR “attention-deficit*” OR “ADHD” OR “learning dis*” 
+OR “reading dis*” OR “dyslexia” OR “math* dis*" OR "math* diff*"))
+
+
+Number of records for each electronic database
+PsycINFO (n=24) [data/raw/PsycInfo.csv]
+PubMed (n=22) [data/raw/PubMed.csv]
+Scopus: (n=31) [data/raw/Scopus.csv]
+Web of Science (n=33) [data/raw/WoS.csv]
+
+Number of records identified through searching electronic databases (n=110) [data/preprocessed/df_all.csv]
+Number of records after duplicates removed (n=46) [data/preprocessed/df_nodup.csv]
