@@ -28,6 +28,8 @@ nrow(df_raw)-nrow(df_nodup)
 
 ## 4. Check itemType, and select just journalArticle
 table(df_nodup$`Item Type`)
+which(df_nodup$`Item Type` != "journalArticle")
+
 
 df_journalArticle = df_nodup[df_nodup$`Item Type` == "journalArticle", ]
 write_csv(df_journalArticle, file = "Literature-review/data/processed/df_ok.csv")
