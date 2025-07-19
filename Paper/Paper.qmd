@@ -1,0 +1,80 @@
+---
+title: "Tails or Types? A Critical Systematic Review of Taxometric Studies in Neurodevelopmental Disorders"
+shorttitle: "Taxometric Review Neurodevelopmental Disorders"
+authors:
+  - name: Enrico Toffalini
+    corresponding: true
+    orcid: 0000-0002-1404-5133
+    email: enrico.toffalini@unipd.it
+    affiliation: Department of General Psychology, University of Padua, Italy
+  - name: Margherita Calderan
+    corresponding: false
+    orcid: 0009-0005-5668-5162
+    email: margherita.calderan@unipd.it
+    affiliation: Department of General Psychology, University of Padua, Italy
+  - name: Riccardo Pagan
+    corresponding: false
+    email: riccardo.pagan.3@studenti.unipd.it
+    affiliation: Department of Social and Developmental Psychology, University of Padua, Italy
+  - name: Valentina Tobia
+    corresponding: false
+    email: tobia.valentina@unisr.it
+    affiliation: University Vita-Salute San Raffaele, Milan, Italy
+author-note:
+  disclosures:
+    study-registration: 'The review was preregistered at https://osf.io/65y9g/?view_only=91e97c6b00dc444abb83fefcf67cbac0'
+    financial-support: 'Financial support: Project 2022KBW99S "Tails or types? Testing the dimensional hypothesis in neurodevelopmental disorders", funded by Next Generation EU, Mission 4, Componente 1, CUP C53D23004210006'
+    gratitude: "We are grateful to Athanasia Vasileiadou who first pointed us to some of the reviewed articles."
+    data-sharing: null
+    related-report: null
+    conflict-of-interest: null
+    authorship-agreements: null
+abstract: "..."
+keywords: [Neurodevelopmental disorders, Taxometric analysis, Autism, ADHD, Learning disorders]
+bibliography: references.bib
+format:
+  apaquarto-docx: default
+  apaquarto-html: default
+  apaquarto-typst: default
+  apaquarto-pdf:
+    documentmode: man
+---
+
+In recent years, research on neurodevelopmental disorders (NDDs) has undergone widespread reconsiderations. Traditional diagnostic categories defined in the DSM-5 [@dsm5], have been increasingly called into question in favor of a dimensional and transdiagnostic view [e.g., @astle2022trandiagnostic; @michelini2024world; @happe2020looking; @happe2021both]. The DSM-5 itself has incorporated dimensional aspects, for example in defining a broad Autistic Spectrum Disorder (ASD) condition instead of a set of different autism-related diagnoses. Several arguments have contributed to this: the large heterogeneity within diagnostic groups, the poor alignment between data-driven clusters and DSM-based categories, the frequent comorbidity and phenotypic correlations across conditions, and the idea that individuals with NDDs might represent, at least in part, the tails of developmental continua, that are quantitatively rather than qualitatively different from the so-called neurotypical population [@michelini2024world; @happe2021both; @mammarella2021nocore].
+
+Clarifying whether NDDs truly represent categories, rather than just tails of continuous distributions that span across the population, is important for different reasons. These involve quests about social and personal self-identity by involved individuals, discussions about diagnostic framing, comorbidity, and the choice on interventions in clinical settings, the structuring of classes, schools, and educational methods when dealing with neurodiversity, and applications to research design, planning of studies, and power analysis in research settings [@caviola2024editorial]. But most importantly, this is relevant for our understanding of the ontological status of reality, which should matter for scientific endeavor.
+
+A dimensional approach fits well with long-standing principles in the study of individual differences in psychology, and has long characterized research on intelligence and personality [@caviola2024editorial]. It also seems appropriate for NDDs given accumulating evidence of polygenicity and multifactorial etiology [@plomin2005generalist; @kovas2006generalist; @pennington2012multiple; @astle2020core; @caviola2024editorial; @demontis2023adhdgenome]. In fact, most behavioral traits are believed to be influenced not by one or a few, but by many small, additive causes [@chabris2015fourth]. According to a famous principle known in statistics as the central limit theorem [@fischer2011central], when many individual causes (even discrete ones, e.g., gene variants) add up they converge to a joint distribution that tends to continuity and normality: this is, in fact, the "secret" of the Gaussian distribution. Nonetheless, a principled categorical view still resists in neurodevelopmental research, for example concerning ASD [e.g., @happe2021both; @chown2021bit; @frazier2023asd], subtypes within NDDs [e.g., @burgess2018taxodyslexia] or the possible emergence of new data-driven taxa [@astle2022trandiagnostic].
+
+Adjudicating between whether a clinical diagnostic category is characterized by an underlying structure that is categorical or dimensional is precisely the focus of taxometric analysis, a set of quantitative methods that have been developed since the 1990s [e.g., @meehl1995taxometric]. Since then, taxometric analysis has been widely applied in psychopathology, generally providing evidence that most mental health conditions (e.g., depression, anxiety) are best conceptualized as dimensional rather than categorical [@haslam2012review; @haslam2020metaanalysis]. In brief, taxometric methods such as MAMBAC, MAXCOV, MAXEIG, and L-Mode, leverage patterns of covariation among observed indicators to test alternative competing latent models that are categorical or dimensional [@ruscio2007taxometric; @ruscio2004checklist; @cole2004taxometric]. Such methods have become increasingly refined through simulation-based techniques such as the Comparison Curve Fit Index (CCFI), which provide criteria for objective decision-making [@ruscio2018using].
+
+Despite this, the use of taxometric analysis in neurodevelopmental research has been limited. Most existing studies focus on adult psychopathology, with few exceptions [@beauchaine2003taxometrics; @haslam2020metaanalysis]. @happe2021both and @chown2021bit in their debate on whether ASD is a category or a continuum not even mention the potential of taxometric analysis. In their recent influential article, @astle2022trandiagnostic briefly presents taxometry but gives it little emphasis, prevailing reviewing studies that employ cluster analysis. However, the limitations of clustering for taxometric purposes have been discussed for decades. Clustering algorithms tend to impose (rather than seek) categorical structure, often fail to recover known taxa in simulations, and generally provide weak tests of taxonicity [@beauchaine2003taxometrics]. Recent studies simulating realistic psychological data, characterized by a combination of (even modestly) skewed and correlated indicators, further suggest that common clustering algorithms easily detect pseudoclusters while having low power to test the existence of true taxa [@toffalini2022entia; @toffalini2024clusters]. Indeed, @astle2022trandiagnostic interpret results from clustering studies as evidence that data-driven structures fail to align with the expected DSM-5 categories, rather than as proper tests of taxonicity.
+
+Taxometric analysis is not without limitations, however. Commonly cited threats to validity of taxometric conclusions include poor indicator validity, nuisance covariance, low base rate, and artificial admixture \[...\]. Poor indicator validity occurs when taxometric analysis is run on variables that present little mean differences between individuals with and without the target disorder (i.e., putatively, the taxon and the complement). Generally, it is recommended that Cohen's d ≫ 1 on each indicator. Nuisance covariance means that there is strong residual correlations after accounting for taxa (i.e., both within the taxon and the complement), thus reflecting the use of redundant indicators; residual r \> 0.40 is often regarded as problematic. Low base rate means that individuals with the taxonic condition are too few in the sample for taxometric analysis to correctly identify them; n \< 30 is often regarded as problematic. This is obviously a problem when the diagnostic category is rare (e.g., 1-2% of the population). All of these threats lead to the risk of failing to detect taxa where they exist. On the other side, artificial admixture consists of collecting participants using alternate recruitment channels. This is often (incorrectly) used to compensate for the low base rate, as many individuals with a diagnosis are recruited separately from the rest of the sample to increase the number of observations with the putative taxon. The resulting sample is an admixture of individuals all of whom might originally come from the same dimensional population, yet it gives the appearance that multiple subgroups are there.
+
+In addition, many studies on autism have drawn categorical conclusions from data that likely suffer from artificial admixture—mixing separately recruited clinical and control samples—which is known to spuriously generate taxonic results even when the true latent structure is dimensional @grove1991; @ruscio2004clarifying; @toffalini2024airipa. While a handful of studies (e.g., @frazier2023categorical) suggest that autism may exhibit a categorical structure, these conclusions warrant skepticism given that they are typically based on admixed samples and rarely report key methodological parameters such as indicator validity or within-group covariance.
+
+## Aims of the Present Review
+
+# Methods
+
+## Search Strategy and Study Selection
+
+## Coding
+
+very strong indicator skewness (for example due to using scales that only measure very rare and seriously problematic behaviors) might generate evidence for taxa where none exist.
+
+# Results
+
+# Discussion
+
+The coexistence of nuisance covariance and/or poor indicator validity is practically unavoidable when true latent structure is dimensional. This is because, for an indicator to largely separate individuals with vs without a diagnosis, it must also be strongly related to the latent dimension, thus leading to strong nuisance covariance with any other indicator. But in fact, such empasse might directly reveal that the true structure of the putative disorder is dimensional.
+
+While the DSM-5 may appear to promote a categorical model of disorders, it does not explicitly commit to a taxonic view. It is often researchers, not diagnostic manuals, who reify clinical categories as natural kinds, despite their originally pragmatic intent.
+
+The fact that observed scores in psychology often deviate from normality [@micceri1989unicorn] may reflect psychometric characteristics (e.g., skewed indicators when observing times, accuracies, bounded sum scores) rather than the true shape of the underlying latent traits.
+
+# References
+
+::: {#refs}
+:::
