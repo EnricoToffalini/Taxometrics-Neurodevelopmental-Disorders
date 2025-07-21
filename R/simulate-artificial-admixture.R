@@ -5,6 +5,7 @@ library(ggplot2)
 library(RTaxometrics)
 library(dplyr)
 library(mclust)
+if(file.exists("R/simulateAdmixtResults.RData")) load("R/simulateAdmixtResults.RData")
 
 ################################################
 
@@ -27,6 +28,8 @@ df$Recruitment = relevel(as.factor(df$Recruitment),ref="General unselected\npopu
 ggplot(df, aes(x=x1,y=x2,color=Recruitment))+
   scale_color_manual(values=c("#132b43","#46a1f7"))+
   geom_point(size=3.5,alpha=.4)+
+  scale_x_continuous(breaks=seq(-10,10,1))+
+  scale_y_continuous(breaks=seq(-10,10,1))+
   theme(text=element_text(size=25))+
   xlab("x1 (z-score)")+ylab("x2 (z-score)")
 
@@ -78,7 +81,7 @@ for(i in 1:niter){
   
   print(resultsAdmix[i,])
 }
-save(resultsAdmix,file="R/artificialAdmixtResults.RData")
+save(resultsAdmix,file="R/simulateAdmixtResults.RData")
 
 ################################################
 
@@ -124,7 +127,7 @@ for(i in 1:niter){
   
   print(resultsNoAdmix[i,])
 }
-save(resultsNoAdmix,file="R/artificialNoAdmixtResults.RData")
+save(resultsAdmix,file="R/simulateAdmixtResults.RData")
 
 ################################################
 
