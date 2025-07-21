@@ -3,7 +3,7 @@
 library(readxl)
 
 # import data
-df = data.frame(read_excel("../data/data_extraction.xlsx"))
+df = data.frame(read_excel("Literature-review/data/data_extraction.xlsx"))
 
 # coders agreement
 1 - mean(is.na(df$conclusion_agreement))
