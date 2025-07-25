@@ -47,17 +47,26 @@ median(df$Sample_size)
 # median sample size by article (averaged)
 median((df |> group_by(ID_article) |> summarize(avg = mean(Sample_size)))$avg)
 
-# median number of indicators per analysis
+# number of indicators per analysis
+min(df$Indicators_number, na.rm = T)
+max(df$Indicators_number, na.rm = T)
 median(df$Indicators_number,na.rm=T)
 
 # methods used
 grepl("MAMBAC",df$Taxometric_methods_used)
 sc = str_count(df$Taxometric_methods_used,";")+1; min(sc); median(sc); max(sc); mean(sc>1)
 
+# taxonic conclusions
+sum(df$Taxonic_conclusion)
+sum(grepl("ASD", df$Target_disorder) & df$Taxonic_conclusion == 1) # total, concerning ASD
+round(100 * sum(grepl("ASD", df$Target_disorder) & df$Taxonic_conclusion == 1) / sum(grepl("ASD", df$Target_disorder)), 1) # average, concerning ASD
+
 # artificial admixture matching taxonic conclusions
 sum(df$Artificial_admixture)
-sum(df$Taxonic_conclusion)
-sum(df$Taxonic_conclusion[df$Artificial_admixture])
+round(100 * mean(df$Taxonic_conclusion[df$Artificial_admixture == 1]), 1) # percentage of studies reaching a taxonic conclusion, with artificial admixture
+round(100 * mean(df$Taxonic_conclusion[df$Artificial_admixture == 0]), 1) # percentage of studies reaching a taxonic conclusion, without artificial admixture
+
+# 
 
 ################################################################
 
