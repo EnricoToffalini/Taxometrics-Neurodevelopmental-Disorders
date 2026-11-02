@@ -1,0 +1,194 @@
+---
+title: "Tails or Types?"
+subtitle: "A Critical Systematic Review of Taxometric Studies of Neurodevelopmental Conditions"
+pagetitle: "Tails or Types? Taxometrics of Neurodevelopmental Conditions"
+lang: en
+format:
+  html:
+    theme: cosmo
+    embed-resources: true
+    toc: false
+    lightbox: true
+    include-in-header:
+      text: |
+        <style>
+        :root { --accent:#9b0014; --accent-dark:#7a0010; --rule:#dcdcdc; --muted:#666; }
+        html { font-size:17px; }
+        body { line-height:1.58; color:#222; }
+        main.content, #quarto-content main { max-width:900px; }
+        h1, h2, h3, .title { font-family: Georgia, "Times New Roman", serif; }
+        #title-block-header { display:none; }
+        a { color:var(--accent); text-underline-offset:3px; }
+        a:hover { color:var(--accent-dark); }
+        ::selection { background:#9b001422; }
+        .topbar { background:var(--accent); color:#fff; padding:.45rem 1rem; font-size:.85rem;
+                  margin:-1rem -1rem 2rem; }
+        .topbar a { color:rgba(255,255,255,.88); text-decoration:none; margin-right:1.2rem; }
+        .topbar a:hover { color:#fff; text-decoration:underline; text-underline-offset:5px; }
+        .head h1 { font-size:2.4rem; margin:0; color:var(--accent); }
+        .head .sub { font-family: Georgia, serif; font-size:1.25rem; margin:.2rem 0 .9rem; }
+        .head .authors { font-size:.98rem; }
+        .head .aff { font-size:.82rem; color:var(--muted); margin-top:.25rem; }
+        h2 { margin-top:2.2rem; font-size:1.5rem; color:#222; border-bottom:1px solid var(--rule); padding-bottom:.25rem; }
+        .abstract { border:1px solid #bbb; border-left:5px solid var(--accent); background:#f8f8f8;
+                    border-radius:6px; padding:1rem 1.25rem; }
+        .abstract p { margin-bottom:.4rem; }
+        .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:.9rem; margin-top:.8rem; align-items:start; }
+        .card2 { border:1px solid var(--rule); border-radius:6px; padding:.85rem 1rem; background:#fff; transition:border-color .15s; }
+        .card2:hover { border-color:var(--accent); }
+        .card2 h3 { font-size:1.08rem; margin:0 0 .35rem; color:var(--accent); }
+        .card2 p { font-size:.88rem; color:var(--muted); margin-bottom:.45rem; }
+        .card2 ul, .card2 ol { padding-left:1.1rem; margin:0; font-size:.9rem; }
+        .card2 li { margin-bottom:.15rem; }
+        .figs figure { margin:0 0 1.4rem; }
+        .figs img { width:100%; height:auto; border:1px solid var(--rule); }
+        .figs figcaption { font-size:.86rem; color:var(--muted); margin-top:.35rem; }
+        .tag { font-size:.75rem; color:var(--muted); font-weight:normal; font-family:system-ui,sans-serif; margin-left:.3rem; }
+        footer.site { margin-top:2.5rem; padding:1rem 0; color:var(--muted); font-size:.82rem; border-top:1px solid var(--rule); }
+        @media (max-width:600px) { .head h1 { font-size:1.9rem; } }
+        .head { background:#faf6f6; border-left:5px solid var(--accent); border-radius:6px; padding:1.3rem 1.5rem 1.1rem; }
+        .head .links { margin-top:.9rem; }
+        .head .links a { display:inline-block; font-size:.85rem; border:1px solid var(--accent); color:var(--accent);
+                         border-radius:4px; padding:.2rem .65rem; margin:.2rem .35rem .2rem 0; text-decoration:none; background:#fff; }
+        .head .links a:hover { background:var(--accent); color:#fff; }
+        .head .links a.primary { background:var(--accent); color:#fff; }
+        .head .links a.primary:hover { background:var(--accent-dark); }
+        .facts { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.7rem; margin:1.4rem 0 .4rem; }
+        .fact { border:1px solid var(--rule); border-top:3px solid var(--accent); border-radius:6px; padding:.55rem .8rem; background:#fff; }
+        .fact .n { font-family:Georgia,serif; font-size:1.55rem; color:var(--accent); line-height:1.2; }
+        .fact .l { font-size:.8rem; color:var(--muted); }
+        .card2 { border-top:3px solid var(--accent) !important; box-shadow:0 1px 3px rgba(0,0,0,.05); }
+        .card2 h3 i, .topbar i, .head .links i { margin-right:.35rem; }
+        .figs { display:grid; grid-template-columns:repeat(auto-fit,minmax(380px,1fr)); gap:1.1rem; }
+        .figs figure, .figs .quarto-figure { border:1px solid var(--rule); border-radius:6px; padding:.7rem; background:#fff; margin:0; }
+        .figs img { border:none !important; }
+        main.content, #quarto-content main { max-width:1000px; }
+        </style>
+---
+
+::: {.topbar}
+[Manuscript](Manuscript-taxometric-NDCs.pdf)
+[Preregistration (OSF)](https://osf.io/65y9g/?view_only=91e97c6b00dc444abb83fefcf67cbac0)
+[Materials (OSF)](https://osf.io/ys5ad/?view_only=0e2812acfabf43fc8af01f883c7331ba)
+[GitHub](https://github.com/EnricoToffalini/Taxometrics-Neurodevelopmental-Disorders)
+:::
+
+::: {.head}
+<h1>Tails or Types?</h1>
+<div class="sub">A critical systematic review of taxometric studies of neurodevelopmental conditions</div>
+<div class="authors">
+Enrico Toffalini<sup>1</sup>, Margherita Calderan<sup>1</sup>, Riccardo Pagan<sup>2</sup>, Valentina Tobia<sup>3</sup>, Edmund Sonuga-Barke<sup>4</sup>
+</div>
+<div class="aff">
+<sup>1</sup>Department of General Psychology, University of Padua; <sup>2</sup>Department of Social and Developmental Psychology, University of Padua; <sup>3</sup>Vita-Salute San Raffaele University, Milan; <sup>4</sup>King's College London
+</div>
+<div class="links">
+<a class="primary" href="Manuscript-taxometric-NDCs.pdf"><i class="bi bi-file-earmark-pdf"></i>Manuscript (PDF)</a>
+<a href="https://osf.io/65y9g/?view_only=91e97c6b00dc444abb83fefcf67cbac0"><i class="bi bi-lock"></i>Preregistration</a>
+<a href="https://osf.io/ys5ad/?view_only=0e2812acfabf43fc8af01f883c7331ba"><i class="bi bi-archive"></i>OSF materials</a>
+<a href="https://github.com/EnricoToffalini/Taxometrics-Neurodevelopmental-Disorders"><i class="bi bi-github"></i>GitHub</a>
+</div>
+:::
+
+::: {.facts}
+<div class="fact"><div class="n">14</div><div class="l">articles included</div></div>
+<div class="fact"><div class="n">4</div><div class="l">databases searched</div></div>
+<div class="fact"><div class="n">4</div><div class="l">condition areas: autism, ADHD, LD, language</div></div>
+<div class="fact"><div class="n">Prereg.</div><div class="l">protocol on OSF</div></div>
+:::
+
+## About the project
+
+Taxometric analysis tests whether the latent structure underlying a clinical condition is **categorical (taxonic)** or **dimensional**. This project systematically reviews published taxometric studies of neurodevelopmental conditions (autism, ADHD, learning disorders, language impairment), with a specific focus on methodological threats to validity, above all **artificial admixture**: combining subsamples recruited in different ways (e.g., clinical and control groups) into a single dataset. A Monte Carlo simulation shows how admixture can produce spurious taxonic findings from purely dimensional data.
+
+::: {.abstract}
+**Background.** Taxometric analysis is specifically designed to test whether the latent structures underlying clinical conditions are categorical (taxonic) or dimensional in nature. Despite its relevance to ongoing debates about the nature of neurodevelopmental conditions, its application to this field has been limited.
+**Methods.** We conducted a preregistered systematic review of published taxometric studies on autism, ADHD, learning disorders, and language impairment, with a focus on methodological threats such as artificial admixture. A Monte Carlo simulation was run to illustrate how admixture can yield false taxonic results from dimensional data.
+**Results.** Fourteen articles met the inclusion criteria. Studies of ADHD and language impairment largely supported dimensional models, whereas most studies of autism and conditions' subtypes supported categorical models. No studies targeted learning disorders as taxa. Admixture was common in studies reaching taxonic conclusions, especially for autism. In simulations, admixture was consistently associated with false positive taxonic findings.
+**Conclusions.** Evidence for categorical structure, especially in autism and disorders' subtypes, is likely undermined by methodological limitations, particularly admixture. We advocate for more high-quality taxometric studies in this area.
+:::
+
+## Key figures
+
+::: {.figs}
+![**PRISMA flow diagram** of the literature search and screening, from database records to the 14 included articles.](Paper-v0/Figures/PRISMA_flow_diagram.png)
+
+![**Monte Carlo simulation**: how artificial admixture of dimensional data inflates the rate of false positive taxonic conclusions.](Paper-v0/Figures/figureAdmixture.png)
+:::
+
+## Explore the materials
+
+::: {.cards}
+
+::: {.card2}
+### <i class="bi bi-file-earmark-text"></i>Manuscript
+<p>Latest version of the paper and its Quarto source (APA style, <code>apaquarto</code>).</p>
+
+- [Manuscript, latest version (PDF)](Manuscript-taxometric-NDCs.pdf)
+- [Earlier draft (PDF)](Paper-v0/Paper.pdf)
+- [Quarto source `Paper.qmd`](https://github.com/EnricoToffalini/Taxometrics-Neurodevelopmental-Disorders/blob/main/Paper-v0/Paper.qmd)
+- [References `references.bib`](https://github.com/EnricoToffalini/Taxometrics-Neurodevelopmental-Disorders/blob/main/Paper-v0/references.bib)
+- [Summary table of reviewed studies (xlsx)](Paper-v0/Tables/Review-Summary.xlsx)
+:::
+
+::: {.card2}
+### <i class="bi bi-clipboard-check"></i>Preregistration
+<p>Review protocol registered before data extraction.</p>
+
+- [Protocol (PDF)](Literature-review/Preregistration/Preregistration-protocol-Taxometrics-NDD.pdf)
+- [Protocol source (Quarto)](https://github.com/EnricoToffalini/Taxometrics-Neurodevelopmental-Disorders/blob/main/Literature-review/Preregistration/Preregistration-protocol-Taxometrics-NDD.Qmd)
+- [Registration on OSF](https://osf.io/65y9g/?view_only=91e97c6b00dc444abb83fefcf67cbac0)
+- [PRISMA flow diagram (PDF)](Literature-review/PRISMA_flow_diagram.pdf)
+:::
+
+::: {.card2}
+### <i class="bi bi-search"></i>Search records <span class="tag">raw data</span>
+<p>Records exported from the bibliographic databases.</p>
+
+- Main search: [PubMed](Literature-review/data/raw/PubMed.csv) · [PsycINFO](Literature-review/data/raw/PsycINFO.csv) · [Scopus](Literature-review/data/raw/Scopus.csv) · [Web of Science](Literature-review/data/raw/WoS.csv)
+- Supplementary search: [PubMed](Literature-review/data/raw/supplementary-search-records/pubmed-extra.csv) · [PsycINFO](Literature-review/data/raw/supplementary-search-records/psycinfo-extra.csv) · [Scopus](Literature-review/data/raw/supplementary-search-records/scopus-extra.csv) · [Web of Science](Literature-review/data/raw/supplementary-search-records/webofscience-extra.csv)
+:::
+
+::: {.card2}
+### <i class="bi bi-table"></i>Screening & extraction <span class="tag">processed data</span>
+<p>Merged, deduplicated and screened records, plus coded study characteristics.</p>
+
+- [All records `df_all.csv`](Literature-review/data/processed/df_all.csv)
+- [Deduplicated `df_nodup.csv`](Literature-review/data/processed/df_nodup.csv)
+- [Screening `df_ok_screening.csv`](Literature-review/data/processed/df_ok_screening.csv) · [`df_ok.csv`](Literature-review/data/processed/df_ok.csv)
+- [Supplementary search `df_supplementary-search.csv`](Literature-review/data/processed/df_supplementary-search.csv)
+- [Data extraction (xlsx)](Literature-review/data/data_extraction.xlsx) · [Data dictionary (xlsx)](Literature-review/data/data_dictionary.xlsx)
+:::
+
+::: {.card2}
+### <i class="bi bi-code-slash"></i>R code
+<p>Scripts to reproduce the review pipeline and the simulation, in order.</p>
+
+- [`0 preprocessing-literature-review.R`](https://github.com/EnricoToffalini/Taxometrics-Neurodevelopmental-Disorders/blob/main/R/0%20preprocessing-literature-review.R) — merge & deduplicate records
+- [`1 analysis-review-data.R`](https://github.com/EnricoToffalini/Taxometrics-Neurodevelopmental-Disorders/blob/main/R/1%20analysis-review-data.R) — analyse extracted data
+- [`2 simulate-artificial-admixture.R`](https://github.com/EnricoToffalini/Taxometrics-Neurodevelopmental-Disorders/blob/main/R/2%20simulate-artificial-admixture.R) — Monte Carlo simulation
+- [Saved simulation results (`.RData`)](R/simulateAdmixtResults.RData)
+:::
+
+::: {.card2}
+### <i class="bi bi-arrow-repeat"></i>Reproduce
+<p>Everything runs from the repository root.</p>
+
+1. Clone or [download the repository (zip)](https://github.com/EnricoToffalini/Taxometrics-Neurodevelopmental-Disorders/archive/refs/heads/main.zip)
+2. Open `Taxometrics-Neurodevelopmental-Disorders.Rproj` in RStudio
+3. Run the scripts in `R/` in order (0 → 1 → 2)
+:::
+
+:::
+
+## Funding
+
+Project 2022KBW99S *"Tails or types? Testing the dimensional hypothesis in neurodevelopmental disorders"*, funded by Next Generation EU, Mission 4, Component 1, CUP C53D23004210006.
+
+## Contact
+
+Enrico Toffalini, Department of General Psychology, University of Padua — [enrico.toffalini@unipd.it](mailto:enrico.toffalini@unipd.it) · ORCID [0000-0002-1404-5133](https://orcid.org/0000-0002-1404-5133)
+
+<footer class="site">
+Built with [Quarto](https://quarto.org) · Source of this page: [`index.qmd`](https://github.com/EnricoToffalini/Taxometrics-Neurodevelopmental-Disorders/blob/main/index.qmd)
+</footer>
